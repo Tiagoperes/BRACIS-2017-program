@@ -21,9 +21,38 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   color: #484335;
-  margin: 20px;
+  margin: 25px;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+h2:before {
+  content: "";
+  border: solid #484335;
+  border-width: 0 5px 5px 0;
+  padding: 6px;
+  transform: rotate(-135deg);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  transition: transform 0.3s;
+}
+
+section.collapsed h2:before {
+  transform: rotate(45deg);
+  top: 6px;
+}
+section.collapsed .time-table{
+  display: none;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .time-table {

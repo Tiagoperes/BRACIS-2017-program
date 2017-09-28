@@ -38,6 +38,5 @@
   createCloseButtons();
   createCollapseButtons();
   collapsePastSections();
-  addToHomescreen();
   
 }());

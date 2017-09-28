@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 16px;
+  background-color: #FEF4C3;
+}
+
+header {
+  height: 103px;
+  background-image: url("images/bracis-general.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 324px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #27413A;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  color: #484335;
+  margin: 20px;
+}
+
+.time-table {
+  background-color: #FFF;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.14);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.time-table > li {
+  padding: 0 10px;
+}
+.time-table > li:nth-child(odd) {
+  background-color: #FFF;
+}
+.time-table > li:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+.break-event {
+  background-color: #333333 !important;
+  color: #FFF;
+}
+
+.event {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.event li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.event li.time {
+  width: 30%;
+}
+
+.event li.title {
+  width: 60%;
+}
+
+.event li.info {
+  width: 10%;
+  height: 47px;
+  text-align: right;
+  padding-top: 13px;
+}
+
+.event li.break {
+  width: 60%;
+  font-size: 18px;
+}
+
+.event li .icon {
+  height: 34px;
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.event-description {
+  background-color: #EEEEEE;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  overflow: auto;
+  padding-bottom: 70px;
+}
+
+.event-description .close {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #FFE8E8;
+  border-top: 5px solid #FF5959;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.event-details {
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.event-details li {
+  margin: 15px 0;
+}
+.event-details li.title:before {
+  content: "";
+  width: 48px;
+  height: 34px;
+  display: inline-block;
+  background-image: url("images/title.png");
+  margin: 8px 10px 8px 0;
+  vertical-align: middle;
+}
+
+.event-details li.author:before {
+  content: "";
+  width: 31px;
+  height: 34px;
+  display: inline-block;
+  background-image: url("images/author.png");
+  margin: 8px 10px 8px 0;
+  vertical-align: middle;
+}
+
+.event-details li.time:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background-image: url("images/time.png");
+  margin: 8px 10px 8px 0;
+  vertical-align: middle;
+}
+
+.event-details li.location:before {
+  content: "";
+  width: 37px;
+  height: 34px;
+  display: inline-block;
+  background-image: url("images/location.png");
+  margin: 8px 10px 8px 0;
+  vertical-align: middle;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 40px 20px 15px;
+}
+
+.description {
+  background-color: #FFF;
+  padding: 10px 20px;
+  width: calc(100%-20px);
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.14);
+  text-align: justify;
+}
+
+.papers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #FFF;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.14);
+}
+
+.papers > li {
+  padding: 10px 20px;
+}
+.papers > li:nth-child(odd) {
+  background-color: #FFF;
+}
+.papers > li:nth-child(even) {
+  background-color: #F7F7F7;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.authors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.authors li {
+  margin: 4px 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .event li {
+    font-size: 12px;
+  }
+  .event li.info {
+    height: 37px;
+    text-align: right;
+    padding-top: 13px;
+  }
+  .event li.break {
+    font-size: 16px;
+  }
+  .event img {
+    height: 24px;
+  }
+  .event li .icon {
+    height: 24px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .event li .icon {
+    height: 18px;
+    margin-right: 8px;
+  }
+}
+

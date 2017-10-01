@@ -31,7 +31,9 @@
         $(collapsible[i]).addClass('collapsed');
       }
     }
-    $(window).scrollTop($('section:not(.collapsed)').first().position().top);
+    if ($('section.collapsed').length) {
+      $(window).scrollTop($('section:not(.collapsed)').first().position().top);
+    }
   }
   
   createMoreInfoButtons();
